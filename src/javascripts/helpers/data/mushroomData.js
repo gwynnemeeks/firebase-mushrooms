@@ -9,8 +9,8 @@ const getMushrooms = () => new Promise((resolve, reject) => {
       const mushroomObjects = response.data;
       const mushrooms = [];
       Object.keys(mushroomObjects).forEach((mushroomId) => {
-        mushroomObjects(mushroomId).id = mushroomId;
-        mushrooms.push(mushroomObjects(mushroomId));
+        mushroomObjects[mushroomId].id = mushroomId;
+        mushrooms.push(mushroomObjects[mushroomId]);
       });
       resolve(mushrooms);
     })
