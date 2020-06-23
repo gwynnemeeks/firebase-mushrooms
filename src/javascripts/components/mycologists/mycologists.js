@@ -1,5 +1,5 @@
-const FinderMaker = (finders) => {
-    const domString = `
+const finderMaker = (finders) => {
+  const domString = `
   <div class="col-3">
   <div class="card">
     <div class="card-body">
@@ -9,8 +9,8 @@ const FinderMaker = (finders) => {
       </div>
   </div>
   `;
-  
-    return domString;
-  };
-  
-  export default { finderMaker };
+
+  return domString;
+};
+
+export default { finderMaker };
